@@ -9,7 +9,7 @@ implementations.
 Here is a list of the features an IDE must have (by some kind of order 
 of importance):
 
-- [ ] Editable text
+- [x] Editable text
 - [ ] Syntax highlighting
 - [ ] File system manager
 - [ ] Line numbering
@@ -38,3 +38,15 @@ of importance):
 - [ ] GUI builders
 - [ ] Pair programming
 - [ ] Refactoring tools
+
+## Implementation
+
+### Editable Text
+
+That's the bare minimum!
+
+We need to load, write and save files. So, technically, gedit or Notepad++ are
+enough to code, but Neovim is so much better. ;)
+
+First, we need to install Neovim (as of April 2025, NVIM v0.11.0): https://neovim.io.
+
