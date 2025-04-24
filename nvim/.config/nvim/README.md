@@ -4,6 +4,8 @@ This document defines how Neovim must behave to be called an Integrated
 Development Environment (IDE) and shows one of many possible
 implementations.
 
+More information can be found in the `notes/` directory.
+
 ## Features
 
 Here is a list of the features an IDE must have (by some kind of order 
@@ -11,7 +13,7 @@ of importance):
 
 - [x] Editable text
 - [x] Syntax highlighting
-- [ ] File system manager
+- [x] File system manager
 - [x] Line numbering
 - [ ] Codebase navigation
 - [ ] Unambiguous, fixed-width font
@@ -76,4 +78,17 @@ Syntax highlighting does not bring much, but at the same time it truly does.
 That's why gedit or Notepad++ have it!
 
 We use the plugin nvim-treesitter for this.
+
+### File System Manager
+
+As soon as we are working on a couple of files, structured in a couple of 
+directories (and subdirectories), we need a file system manager to speed up the 
+process of navigating through everything.
+
+Having a file system manager doesn't mean it must be open all the time, as it 
+becomes distracting. Plus, it takes place for no reason.
+
+The `nvim-tree` plugin adds a file system manager.
+
+
 
