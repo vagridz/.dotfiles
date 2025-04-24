@@ -12,7 +12,7 @@ of importance):
 - [x] Editable text
 - [ ] Syntax highlighting
 - [ ] File system manager
-- [ ] Line numbering
+- [x] Line numbering
 - [ ] Codebase navigation
 - [ ] Unambiguous, fixed-width font
 - [ ] User-friendly (and attractive) interface
@@ -60,3 +60,13 @@ Usually, we talk about extensibility at the end, when we alreadt have a
 self-respecting IDE. It's more the cherry on top of everything, but in this 
 case we must install the [lazy.nvim](https://github.com/folke/lazy.nvim) plugin
 manager for extensibility as we will use it to build our IDE.
+
+### Line Numbering
+
+Line numbering is not essential, but it's a must-have, particularly in 
+Vi/Vim/Neovim. Line numbering speeds up navigating through files; for 
+example, `8j` moves cursor 8 lines down or `14G` goes to the 14th line.
+
+We only need to set options in lua/core/options.lua (and also have 
+an `init.lua` file).
+
