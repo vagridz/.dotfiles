@@ -32,7 +32,7 @@ of importance):
 - [ ] Speed
 - [ ] Integrated terminal
 - [ ] Database integration
-- [ ] Extensibility
+- [x] Extensibility
 - [ ] Remote development
 - [ ] Code profiling
 - [ ] GUI builders
@@ -50,3 +50,13 @@ enough to code, but Neovim is so much better. ;)
 
 First, we need to install Neovim (as of April 2025, NVIM v0.11.0): https://neovim.io.
 
+### Extensibility
+
+Plugin managers increase IDEs' capabilities. An IDE that supports plugins or 
+extensions enables us to enhance our workflow by tailoring our development 
+environment.
+
+Usually, we talk about extensibility at the end, when we alreadt have a 
+self-respecting IDE. It's more the cherry on top of everything, but in this 
+case we must install the [lazy.nvim](https://github.com/folke/lazy.nvim) plugin
+manager for extensibility as we will use it to build our IDE.
