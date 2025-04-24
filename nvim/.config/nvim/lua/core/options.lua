@@ -83,3 +83,13 @@ opt.autoindent = true
 
 -- Show line under cursor
 opt.cursorline = true
+
+--[[ Netrw (nvim-tree) ]]
+
+-- Recommended settings from nvim-tree documentation to disable default netrw
+-- file explorer
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- Optionally enable 24-bit colour
+vim.opt.termguicolors = true
