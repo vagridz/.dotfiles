@@ -10,7 +10,7 @@ Here is a list of the features an IDE must have (by some kind of order
 of importance):
 
 - [x] Editable text
-- [ ] Syntax highlighting
+- [x] Syntax highlighting
 - [ ] File system manager
 - [x] Line numbering
 - [ ] Codebase navigation
@@ -69,4 +69,11 @@ example, `8j` moves cursor 8 lines down or `14G` goes to the 14th line.
 
 We only need to set options in lua/core/options.lua (and also have 
 an `init.lua` file).
+
+### Syntax Highlighting
+
+Syntax highlighting does not bring much, but at the same time it truly does.
+That's why gedit or Notepad++ have it!
+
+We use the plugin nvim-treesitter for this.
 
