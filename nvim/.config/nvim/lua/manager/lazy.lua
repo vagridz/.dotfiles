@@ -56,7 +56,9 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Set up lazy, and load dynamically `lua/plugins` directory and subdirectories
 require("lazy").setup({
-}, {
+	  { import = "plugins.syntax-completion" },
+  }, 
+  {
 	-- Lazy automatically check for plugin updates
 	checker = {
 		enabled = true,
